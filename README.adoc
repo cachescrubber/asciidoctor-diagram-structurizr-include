@@ -1,0 +1,26 @@
+= README
+
+Example structurizr workspace to reproduce an issue with `!include` element of the structurizr dsl.
+
+Validating the workspace using the structurizr-cli:
+
+[source, bash]
+----
+# structurizr-cli validate -w src/main/asciidoc/system-catalog/dsl/system-landscape/workspace.dsl
+----
+
+The cli is able to resolve included files relative to the workspace.dsl file location.
+
+Rendering the workspace with asciidoctor-diagram is unable to resolve included files:
+
+----
+Failed to generate image: PlantUML preprocessing failed: [From <input> (line 2) ]
+
+@startuml
+Failed to generate image: Structurizr code generation failed: com.structurizr.dsl.StructurizrDslParserException: /Users/ ...
+^^^^^
+ Syntax Error?
+
+Failed to generate image: Structurizr code generation failed: com.structurizr.dsl.StructurizrDslParserException: /Users/lars/Scratch/catalog.dsl could not be found at line 1 of /Users/lars/Scratch/asciidoctor-diagram-structurizr-include/.: workspace extends ../catalog.dsl {
+workspace extends ../catalog.dsl {
+----

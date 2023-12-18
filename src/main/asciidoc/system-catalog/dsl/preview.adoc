@@ -11,4 +11,4 @@ testdot
 
 structurizr::catalog.dsl[view="SystemLandscape-001", renderer="plantuml-c4"]
 
-structurizr::system-landscape/workspace.dsl[view="SystemLandscape-001", renderer="plantuml-c4", nocache="true"]
+structurizr::system-landscape/workspace.dsl[view="SystemLandscape", renderer="plantuml-c4", nocache="true"]

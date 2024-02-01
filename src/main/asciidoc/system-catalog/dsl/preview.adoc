@@ -19,6 +19,7 @@ workspace "system-catalog" "C4 Model System Catalog Example" {
     model {
         customer = person "Customer"
 
+
         group orderManagement {
           orderService = softwareSystem "Order Service"
           orderBackend = softwareSystem "Order Backend"
@@ -45,8 +46,10 @@ workspace "system-catalog" "C4 Model System Catalog Example" {
 }
 ----
 
-=== Block Macro
+=== Block Macro (No Includes)
 
 structurizr::catalog.dsl[view="SystemLandscape-001", renderer="plantuml-c4"]
+
+=== Block Macro (With Includes)
 
 structurizr::system-landscape/workspace.dsl[view="SystemLandscape", renderer="plantuml-c4", nocache="true"]

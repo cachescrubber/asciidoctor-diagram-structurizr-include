@@ -6,7 +6,7 @@ workspace "system-catalog" "C4 Model System Catalog Example" {
 
         group orderManagement {
           orderService = softwareSystem "Order Service"
-          orderBackend = softwareSystem "Order Backend"
+          orderBackend = softwareSystem "Order Bäckend"
         }
         invoiceService = softwareSystem "Invoice Service"
         customerService = softwareSystem "Customer Service"

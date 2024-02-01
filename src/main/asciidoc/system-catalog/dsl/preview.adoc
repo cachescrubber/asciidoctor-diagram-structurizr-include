@@ -1,6 +1,8 @@
 = Workspace Preview
 
-== Catalog
+== PLantUML
+
+== Version
 
 [plantuml]
 ----
@@ -9,7 +11,23 @@ testdot
 @enduml
 ----
 
-=== Block Diagram
+=== PLantUML Block Diagram
+
+[plantuml]
+----
+@startuml
+actor Bäckend
+@enduml
+----
+
+=== PLantUML Block macro
+
+plantuml:backend.puml[]]
+
+
+== Catalog
+
+=== Structurizr Block Diagram
 
 [structurizr, view="SystemLandscape-001", renderer="plantuml"]
 ----
@@ -21,8 +39,8 @@ workspace "system-catalog" "C4 Model System Catalog Example" {
 
 
         group orderManagement {
-          orderService = softwareSystem "Order Service"
-          orderBackend = softwareSystem "Order Backend"
+          orderService = softwareSystem "Order Service (Inline)"
+          orderBackend = softwareSystem "Order Bäckend (Inline)"
         }
         invoiceService = softwareSystem "Invoice Service"
         customerService = softwareSystem "Customer Service"

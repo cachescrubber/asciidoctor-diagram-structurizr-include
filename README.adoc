@@ -2,6 +2,12 @@
 
 Example structurizr workspace to reproduce an issue with `!include` element of the structurizr dsl.
 
+Fixed with
+
+* https://github.com/asciidoctor/asciidoctor-diagram/issues/449
+* https://github.com/asciidoctor/asciidoctor-diagram/issues/455
+
+
 Validating the workspace using the structurizr-cli:
 
 [source, bash]
